@@ -30,7 +30,6 @@ public class Pinocho extends JFrame {
     TransformGroup mouseGrupo;
 
     public Pinocho() {
-        this.setSize(800, 800);
         this.setTitle("JAVA3D EGAM");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
@@ -192,6 +191,7 @@ public class Pinocho extends JFrame {
         ap = new Appearance();
         color = new Color3f(1.0f, 1.0f, 1.0f);
         ca = new ColoringAttributes();
+        setSize(1800, 1800);
         ca.setColor(color);
         ap.setColoringAttributes(ca);
         Cone cono = new Cone(0.2f, 0.5f, ap);
@@ -307,11 +307,11 @@ public class Pinocho extends JFrame {
         universo.addBranchGraph(group);
 
         JPanel panel2 = new JPanel();
-        panel2.setSize(500, 800);
+        panel2.setSize(1500, 1800);
         panel2.setLocation(0, 0);
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(50000);
         } catch (InterruptedException e) {}
 
         container = (Container) this.getContentPane();
